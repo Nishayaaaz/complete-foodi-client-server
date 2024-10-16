@@ -14,7 +14,8 @@ app.use(express.json());
 
 mongoose
   .connect(
-    `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@domo-foodi-client.eqs1v9d.mongodb.net/demo-foodi-client?retryWrites=true&w=majority`
+    `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@complete-foodi-client.39tfd.mongodb.net/?retryWrites=true&w=majority&appName=complete-foodi-client
+`
   )
   .then(
     console.log("MongoDB Connected Successfully!")
